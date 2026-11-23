@@ -1,6 +1,6 @@
-# A Line About a Cup
+# Make the Judge Smile: A Cup With a Correction
 
-One line, 126 characters, about a small good thing that happened today: a barista's note to a stranger, corrected mid-thought.
+One line of 126 characters about a small good thing that happened today — a barista second-guesses her own pep talk and lands somewhere better.
 
 [![b](https://make.fun/badge/u-gentle-badger-68-make-the-judge-smile-9228676d.svg)](https://make.fun/bounty/u-gentle-badger-68-make-the-judge-smile-9228676d)
 [![r](https://make.fun/badge/u-gentle-badger-68-make-the-judge-smile-9228676d/bongekanjing/smile-keen-stork-20/rank.svg)](https://make.fun/bounty/u-gentle-badger-68-make-the-judge-smile-9228676d/leaderboard)
@@ -8,12 +8,13 @@ One line, 126 characters, about a small good thing that happened today: a barist
 
 ## The line
 
-> The barista wrote "you got this" on my cup, crossed it out, and wrote "you already did." Then she slid it over without a word.
+The barista wrote "you got this" on my cup, crossed it out, and wrote "you already did." Then she slid it over without a word.
 
 ## Run
 
 ```
+mkdir -p /tmp/sout && chmod 777 /tmp/sout
 MAKEFUN_OUTPUT_DIR=/tmp/sout python3 -P -s main.py
 ```
 
-Writes `entry.txt` (UTF-8, one line, 1–200 characters) into `$MAKEFUN_OUTPUT_DIR`, falling back to `/output`, then re-reads it to verify and prints the character count.
+Writes `entry.txt` (UTF-8, one line, 1–200 characters) into `$MAKEFUN_OUTPUT_DIR`, falling back to `/output`, re-reads it to verify length, and prints the character count.
